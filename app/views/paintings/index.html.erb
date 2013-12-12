@@ -1,0 +1,10 @@
+<h1>PaintingQUEST!!</h1>
+<%= form_tag '/search', method: :get do %>
+     <%= label_tag :q, "Search" %>
+      <%= text_field_tag :q %>
+    <%= submit_tag "search" %>
+<% end %>
+
+<p><%= link_to 'Add New Painting', new_painting_path %></p>
+
+<%= render 'paintings' %>
